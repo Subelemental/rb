@@ -1,11 +1,11 @@
-# RB Website
+# RB SS Tracker
 
-A modern, interactive website featuring an image gallery and dual calculator functionality.
+A website created for Ritual Beast players in Yugioh to keep track of what monsters they have special summoned.
 
 ## Features
 
-### Image Gallery
-- Responsive grid layout displaying 11 images
+### Ritual Beast Gallery
+- Responsive grid layout displaying 12 monsters
 - Click images to toggle between color and grayscale
 - Smooth hover effects and transitions
 
@@ -26,7 +26,7 @@ A modern, interactive website featuring an image gallery and dual calculator fun
 - Responsive Design
 
 ## Live Demo
-🌐 [View Live Website](https://[your-username].github.io/rb-website)
+🌐 [View Live Website](https://subelemental.github.io/rb)
 
 ## Local Development
 1. Clone the repository
@@ -34,4 +34,4 @@ A modern, interactive website featuring an image gallery and dual calculator fun
 3. No build process required!
 
 ---
-© 2023 RB Website
+© 2025 Subelemental
