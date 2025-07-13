@@ -19,7 +19,7 @@ header h1 {
 
 main {
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 0 1rem;
 }
 
@@ -36,7 +36,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .content img {
