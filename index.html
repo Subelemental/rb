@@ -7,27 +7,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to RB Website</h1>
-    </header>
     <main>
         <div class="content">
-            <img src="assets/apelio.jpg" alt="Apelio">
             <img src="assets/canna.png" alt="Canna">
-            <img src="assets/images.jpg" alt="Images">
-            <img src="assets/nochi.png" alt="Nochi">
-            <img src="assets/pettle.jpg" alt="Pettle">
             <img src="assets/rampengu.png" alt="Rampengu">
             <img src="assets/spiritualBeastTamerLara.jpg" alt="Spiritual Beast Tamer Lara">
+            <img src="assets/elder.jpg" alt="Elder">
+            <img src="assets/winda.png" alt="Winda">
+            <img src="assets/apelio.jpg" alt="Apelio">
             <img src="assets/tamerLara.png" alt="Tamer Lara">
             <img src="assets/wen.jpg" alt="Wen">
-            <img src="assets/winda.png" alt="Winda">
+            <img src="assets/pettle.jpg" alt="Pettle">
             <img src="assets/zefra.jpg" alt="Zefra">
+            <img src="assets/nochi.png" alt="Nochi">
+            <img src="assets/reuratauri.jpg" alt="Reuratauri">
         </div>
         
         <div class="calculators">
             <div class="calculator">
-                <h3>Calculator 1</h3>
+                <h3>Oponent</h3>
                 <div class="display" id="display1">8000</div>
                 <div class="buttons">
                     <button onclick="subtract(1, 1000)">-1000</button>
@@ -38,7 +36,7 @@
             </div>
             
             <div class="calculator">
-                <h3>Calculator 2</h3>
+                <h3>Vale</h3>
                 <div class="display" id="display2">8000</div>
                 <div class="buttons">
                     <button onclick="subtract(2, 1000)">-1000</button>
@@ -48,14 +46,20 @@
                 </div>
             </div>
             
+            <div class="timer-container">
+                <h3>Timer</h3>
+                <div class="timer-display" id="timerDisplay">45:00</div>
+                <div class="timer-buttons">
+                    <button class="timer-button" id="startStopBtn" onclick="toggleTimer()">Start</button>
+                    <button class="timer-button" onclick="resetTimer()">Reset</button>
+                </div>
+            </div>
+            
             <div class="reset-container">
-                <button class="reset-button" onclick="resetBoth()">Reset Both Calculators</button>
+                <button class="reset-button" onclick="resetBoth()">Reset</button>
             </div>
         </div>
     </main>
-    <footer>
-        <p>&copy; 2023 RB Website</p>
-    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>

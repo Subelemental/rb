@@ -43,3 +43,59 @@ function resetBoth() {
     document.getElementById('display1').textContent = calculator1Value;
     document.getElementById('display2').textContent = calculator2Value;
 }
+
+// Timer functionality
+let timerMinutes = 45;
+let timerSeconds = 0;
+let timerInterval = null;
+let isTimerRunning = false;
+
+// Function to format time as MM:SS
+function formatTime(minutes, seconds) {
+    return `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+}
+
+// Function to update timer display
+function updateTimerDisplay() {
+    document.getElementById('timerDisplay').textContent = formatTime(timerMinutes, timerSeconds);
+}
+
+// Function to start/stop timer
+function toggleTimer() {
+    if (isTimerRunning) {
+        // Stop timer
+        clearInterval(timerInterval);
+        isTimerRunning = false;
+        document.getElementById('startStopBtn').textContent = 'Start';
+    } else {
+        // Start timer
+        isTimerRunning = true;
+        document.getElementById('startStopBtn').textContent = 'Pause';
+        
+        timerInterval = setInterval(function() {
+            if (timerSeconds > 0) {
+                timerSeconds--;
+            } else if (timerMinutes > 0) {
+                timerMinutes--;
+                timerSeconds = 59;
+            } else {
+                // Timer reached 00:00
+                clearInterval(timerInterval);
+                isTimerRunning = false;
+                document.getElementById('startStopBtn').textContent = 'Start';
+                alert('Time\'s up!');
+            }
+            updateTimerDisplay();
+        }, 1000);
+    }
+}
+
+// Function to reset timer
+function resetTimer() {
+    clearInterval(timerInterval);
+    isTimerRunning = false;
+    timerMinutes = 45;
+    timerSeconds = 0;
+    updateTimerDisplay();
+    document.getElementById('startStopBtn').textContent = 'Start';
+}
