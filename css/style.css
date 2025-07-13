@@ -242,17 +242,20 @@ footer {
     
     /* Calculator container */
     .calculators {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.5rem;
+        flex-wrap: nowrap;
     }
     
     /* Individual calculator adjustments */
     .calculator {
         min-width: unset;
         width: 100%;
-        max-width: 300px;
-        padding: 1rem;
+        max-width: 48%;
+        padding: 0.8rem;
+        flex: 1;
     }
     
     .calculator h3 {
@@ -329,8 +332,13 @@ footer {
     }
     
     .calculator {
-        max-width: 280px;
-        padding: 0.6rem;
+        max-width: 48%;
+        padding: 0.5rem;
+        flex: 1;
+    }
+    
+    .calculators {
+        gap: 0.3rem;
     }
     
     .display {
