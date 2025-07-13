@@ -6,37 +6,19 @@ body {
     background-color: #000000;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
 main {
     max-width: 1200px;
-    margin: 1rem auto;
+    margin: 0 auto;
     padding: 0 1rem;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
 
 /* Content Section - Images */
 .content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .content img {
@@ -62,7 +44,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .calculator {
@@ -126,7 +108,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .reset-button {
@@ -157,7 +139,7 @@ footer {
     padding: 1.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     max-width: 300px;
 }
 
