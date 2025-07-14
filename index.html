@@ -26,22 +26,28 @@
         <div class="calculators">
             <div class="calculator">
                 <h3>Vale</h3>
-                <div class="display" id="display1">8000</div>
+                <div class="display-container">
+                    <button class="toggle-btn" id="toggle1" onclick="toggleMode(1)">-</button>
+                    <div class="display" id="display1">8000</div>
+                </div>
                 <div class="buttons">
-                    <button onclick="subtract(1, 1000)">-1000</button>
-                    <button onclick="subtract(1, 100)">-100</button>
-                    <button onclick="subtract(1, 50)">-50</button>
+                    <button onclick="calculate(1, 1000)" id="btn1-1000">-1000</button>
+                    <button onclick="calculate(1, 100)" id="btn1-100">-100</button>
+                    <button onclick="calculate(1, 50)" id="btn1-50">-50</button>
                     <button onclick="divide(1)">/2</button>
                 </div>
             </div>
             
             <div class="calculator">
                 <h3>Opponent</h3>
-                <div class="display" id="display2">8000</div>
+                <div class="display-container">
+                    <button class="toggle-btn" id="toggle2" onclick="toggleMode(2)">-</button>
+                    <div class="display" id="display2">8000</div>
+                </div>
                 <div class="buttons">
-                    <button onclick="subtract(2, 1000)">-1000</button>
-                    <button onclick="subtract(2, 100)">-100</button>
-                    <button onclick="subtract(2, 50)">-50</button>
+                    <button onclick="calculate(2, 1000)" id="btn2-1000">-1000</button>
+                    <button onclick="calculate(2, 100)" id="btn2-100">-100</button>
+                    <button onclick="calculate(2, 50)" id="btn2-50">-50</button>
                     <button onclick="divide(2)">/2</button>
                 </div>
             </div>
