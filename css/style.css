@@ -31,9 +31,6 @@ main {
     cursor: pointer;
 }
 
-.content img:hover {
-    transform: scale(1.05);
-}
 
 .content img.greyed {
     filter: grayscale(100%) brightness(0.7);
